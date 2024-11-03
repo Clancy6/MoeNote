@@ -69,22 +69,7 @@ if ($uuid) {
     <title><?php echo htmlspecialchars($settings->getSetting('site_name')); ?></title>
     <link rel="icon" href="<?php echo htmlspecialchars($settings->getSetting('favicon_path')); ?>">
     <link rel="stylesheet" href="css/marked.css">
-    <noscript>
-        <link rel="stylesheet" href="css/outdated-style.css">
-    </noscript>
-    <script>
-        if (CSS.supports && CSS.supports("--primary-color", "#3498db")) {
-            loadCSS("css/style.css");
-        } else {
-            loadCSS("css/outdated-style.css");
-        }
-        function loadCSS(file) {
-            var link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.href = file;
-            document.head.appendChild(link);
-        }
-    </script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
